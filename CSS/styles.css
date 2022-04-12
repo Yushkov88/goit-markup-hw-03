@@ -1,0 +1,185 @@
+/* цвет основного текста #212121 */
+/* вторичный цвет текста #757575 */
+/* цвет акцента #2196F3 */
+/* бэкграуд хэдер #ECECEC */
+/* бэкграунд герой и футер #2F303A */
+/* бэкграунд Наша команда #F5F4FA */
+/* логотип #000000 */
+
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --accent-color: #2196f3;
+  --bcg-team-color: #f5f4fa;
+  --bgc-header: #ececec;
+  --bgc-hero-footer: #2f303a;
+  --logo: #000000;
+}
+.page {
+  font-family: 'Roboto', 'sans-serif';
+  background-color: #ffffff;
+  letter-spacing: 0.03em;
+}
+.list {
+  list-style: none;
+}
+
+/* Лого */
+.logo {
+  color: var(--logo);
+  text-decoration: none;
+  font-family: 'Raleway';
+  font-size: 26px;
+  line-height: 1.19;
+}
+.span-logo {
+  color: var(--accent-color);
+}
+
+/* Шапка сайта */
+.site-nav .link {
+  color: var(--primary-text-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.contacts .link {
+  color: var(--secondary-text-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.contacts .link:hover,
+.contacts .link:focus {
+  color: var(--accent-color);
+}
+/* Герой */
+.hero-title {
+  background-color: var(--bgc-hero-footer);
+  color: #ffffff;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.btn {
+  font-family: inherit;
+  background-color: var(--accent-color);
+  color: #ffffff;
+  cursor: pointer;
+}
+/* Преимущества */
+.features-list-title {
+  color: var(--primary-text-color);
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.features-list-text {
+  color: var(--secondary-text-color);
+  font-size: 14px;
+  line-height: 1.71;
+}
+/* Чем мы занимаемся */
+.work-title {
+  color: var(--primary-text-color);
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+/* Наша команда */
+.team {
+  background-color: var(--bcg-team-color);
+}
+.team-title {
+  color: var(--primary-text-color);
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+.team-list-title {
+  color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+}
+.team-list-text {
+  color: var(--secondary-text-color);
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+}
+/* Футер */
+.footer {
+  background-color: var(--bgc-hero-footer);
+}
+
+.span-logo-footer {
+  font-family: 'Raleway';
+  color: #ffffff;
+}
+.footer-list .address {
+  color: #ffffff;
+  font-style: normal;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.71;
+}
+.footer .logo {
+  color: var(--accent-color);
+}
+.footer-list .link {
+  text-decoration: none;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-list .link:hover,
+.footer-list .link:focus,
+.footer-list .address:hover,
+.footer-list .address:focus {
+  color: var(--accent-color);
+}
+
+/* Портфолио Фильтр*/
+.filters-btn {
+  font-family: inherit;
+  background-color: var(--bcg-team-color);
+  color: var(--primary-text-color);
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+}
+.filters-btn:hover,
+.filters-btn:focus {
+  background-color: var(--accent-color);
+  color: var(--bcg-team-color);
+}
+/* Портфолио Картинки */
+.pictures-list-title {
+  color: var(--primary-text-color);
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.pictures-list-text {
+  color: var(--secondary-text-color);
+  font-size: 16px;
+  line-height: 1.87;
+}
+.pictures-link {
+  text-decoration: none;
+}
