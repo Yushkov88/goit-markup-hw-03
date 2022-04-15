@@ -51,6 +51,12 @@ ol {
   margin: 0;
 }
 
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
 button {
   cursor: pointer;
 }
@@ -67,8 +73,6 @@ button {
 }
 /* Лого */
 .page-header {
-  padding-top: 24px;
-  padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
 }
 .page-header .container {
@@ -90,10 +94,6 @@ button {
 
 /* Шапка сайта */
 .nav-flex {
-  display: flex;
-  align-items: center;
-}
-.nav-flex .item {
   display: flex;
   align-items: center;
 }
@@ -140,7 +140,7 @@ button {
   /* outline: 2px solid black; */
 }
 .contacts .link {
-  color: var(--primary-text-color);
+  color: var(--secondary-text-color);
   text-decoration: none;
 }
 .contacts > .item-nav:first-child {
@@ -201,9 +201,8 @@ button {
   padding: 10px 32px;
 }
 /* Преимущества */
-.features {
+.section {
   padding: 94px 0;
-  text-align: center;
   /* outline: 2px solid tomato; */
 }
 .features-list-title {
@@ -256,7 +255,6 @@ button {
   /* outline: 2px solid tomato; */
 }
 .work-list-item {
-  display: flex;
   flex-basis: calc((100% - 90px) / 3);
   margin-left: 30px;
 }
@@ -264,14 +262,12 @@ button {
 /* Наша команда */
 .team {
   background-color: var(--bcg-team-color);
-  padding-top: 94px;
   /* outline: 2px solid tomato; */
 }
 
 .team-list {
   display: flex;
   margin-left: -30px;
-  padding-bottom: 94px;
 }
 .team-list-item {
   flex-basis: calc(100% / 4 - 30px);
@@ -329,9 +325,6 @@ button {
 .footer-adr {
   margin-top: 20px;
 }
-.footer-list-item {
-  margin-bottom: 9px;
-}
 
 .footer-list-item:not(:last-child) {
   margin-bottom: 9px;
@@ -372,7 +365,6 @@ button {
 .filters-list {
   display: flex;
   justify-content: center;
-  margin-top: 94px;
   margin-bottom: 50px;
 }
 .filters-list-item:not(:last-child) {
@@ -403,11 +395,10 @@ button {
 .pictures-list {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 94px;
   /* outline: 2px solid tomato; */
 }
 .pictures-list-item {
-  flex-basis: calc(100% / 3 - 60px);
+  width: calc((100% - 60px) / 3);
 }
 
 .pictures-list-item:not(:nth-child(3n)) {
@@ -425,9 +416,11 @@ button {
 }
 .pictures-list-title {
   color: var(--primary-text-color);
+  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-bottom: 4px;
   /* outline: 2px solid tomato; */
 }
 
@@ -435,6 +428,7 @@ button {
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.87;
+  letter-spacing: 0.03em;
   /* outline: 2px solid tomato; */
 }
 
